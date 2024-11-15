@@ -50,7 +50,12 @@ namespace ysoserial.Generators
 
          return options;
       }
-
+        
+      public object GenerateDotNetNuke(string formatter, InputArgs inputArgs)
+        {
+            variant_number = 2;
+            return Generate(formatter, inputArgs);
+        }  
       public override object Generate(string formatter, InputArgs inputArgs)
       {
          var files = inputArgs.Cmd;
